@@ -62,8 +62,7 @@ html body .benefit .benefit-ball.transparent {
   background: transparent; 
 }
 .jumbotron div.v-center > * { 
-  display: table-cell; 
-  vertical-align: top; 
+  display: inline-block; 
   line-height: 0;
   padding: 6px;
 }
@@ -105,6 +104,23 @@ html body .benefit .benefit-ball.transparent {
 }
 .navbar ul.nav li button {
   margin: 0.7em 0 0 1em;
+}
+#bitcoin {
+  position: absolute;
+  right: 10px;
+  top: 12em;
+  padding: 6px;
+}
+#bitcoin a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+#bitcoin img {
+  height: 60px;
+  width: auto;
+  display: inline-block;
 }
 .jumbotron {
   background: url(../img/noisy_net.png);
