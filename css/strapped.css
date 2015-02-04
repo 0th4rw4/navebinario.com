@@ -108,8 +108,9 @@ html body .benefit .benefit-ball.transparent {
 #bitcoin {
   position: absolute;
   right: 10px;
-  top: 12em;
+  top: 27em;
   padding: 6px;
+  line-height: 0.5em;
 }
 #bitcoin a {
   display: inline;
@@ -118,9 +119,7 @@ html body .benefit .benefit-ball.transparent {
   font-size: 10px;
 }
 #bitcoin img {
-  height: 60px;
-  width: auto;
-  display: inline-block;
+  display: block;
 }
 .jumbotron {
   background: url(../img/noisy_net.png);
