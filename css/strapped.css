@@ -109,7 +109,7 @@ html body .benefit .benefit-ball.transparent {
 .jumbotron {
   background: url(../img/noisy_net.png);
   color: #fff;
-  padding: 6.5em 0 6em;
+  padding: 5.5em 0 6em;
   text-align: center;
 }
 .jumbotron h1,
@@ -123,7 +123,7 @@ html body .benefit .benefit-ball.transparent {
 }
 .jumbotron h1 { 
   font-size: 2em;
-  margin-bottom: 1.4em;
+  margin-bottom: 0.9em;
 }
 .jumbotron h2,
 .jumbotron .h2 {
@@ -131,7 +131,7 @@ html body .benefit .benefit-ball.transparent {
   font-style: italic;
   font-weight: normal;
   line-height: 1.4em;
-  margin-bottom: 1.4em;
+  margin-bottom: 1em;
 }
 .jumbotron h2 {
   margin-top: 3.3em;
