@@ -61,7 +61,10 @@ img.logo2 {
 html body .benefit .benefit-ball.transparent { 
   background: transparent; 
 }
-.jumbotron div.v-center > * { 
+.jumbotron div.social {
+  padding-left: 96px;
+}
+.jumbotron div.social > * { 
   display: inline-block; 
   line-height: 0;
   padding: 6px;
