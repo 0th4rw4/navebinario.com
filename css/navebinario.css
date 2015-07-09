@@ -60,9 +60,6 @@ img.logo2 {
 html body .benefit .benefit-ball.transparent { 
   background: transparent; 
 }
-.binario div.social {
-  /*padding-left: 96px;*/
-}
 .binario div.social > * { 
   display: inline-block; 
   line-height: 0;
@@ -82,7 +79,6 @@ html body .benefit .benefit-ball.transparent {
 }
 
 .btn {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 2px;
 }
 .container {
@@ -204,6 +200,43 @@ li.benefit {
   font-weight: bold;
 }
 
+.form-horizontal .form-group {
+  width: 40%;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+form { position: relative; }
+form .info-box {
+  margin-top: 0;
+  color: #333;
+  padding: 8px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0.0;
+  font-size: 0.9em;
+
+  transition-delay: 0s;
+  transition-duration: 0.7s;
+  transition-property: all;
+  transition-timing-function: ease;
+
+  -moz-transition-delay: 0s;
+  -moz-transition-duration: 0.7s;
+  -moz-transition-property: all;
+  -moz-transition-timing-function: ease;
+
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.7s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+}
+form .info-box.show {
+  visibility: visible;
+  opacity: 1.0;
+  margin-top: 10px;
+}
+#contacto form button { margin: 5px;}
 footer {
   background: #111;
   color: #fff;

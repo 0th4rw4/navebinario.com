@@ -39,7 +39,7 @@
             <li><a href="#top" class="nav-link">Binario</a></li>
             <li><a href="#weapons" class="nav-link">Recursos Principales</a></li>
             <li><a href="#a_voluntad" class="nav-link" title="Proximamente">A Voluntad!</a></li>
-            <!-- <li><a href="#whoami" class="nav-link">El Capitan</a></li> -->
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
           </ul>
         </div> <!-- /.navbar-collapse -->
       </div> <!-- /.container -->
@@ -51,7 +51,7 @@
         <p class="h2">Transporta tu proyecto al proximo nivel</p>
         <h1>Desarrollo Web para tus ideas</h1>
         <p>+1Up Elevate Ahora</p>
-        <p><a class="btn btn-warning btn-lg" href="#weapons"> </a></p>
+        <p><a class="btn btn-warning btn-lg nav-link" href="#contacto"> </a></p>
 
         <div class="social">
           <a href="http://ar.linkedin.com/in/navebinario/" title="LinkedIn" rel="me nofollow" ><img src="iconos/LinkedIn.png" alt="LinkedIn" /></a>
@@ -164,6 +164,35 @@
           <p>Si necesitas instalar un sistema gnu/linux o alguno otro software libre, acepto retribuciones de cualquier moneda tipo clase y color...</p>
         </div>
       </div> <!-- /.row -->
+
+      <div class="sect-border"></div>
+
+      <h3 id="contacto" class="subhead">Ponete en contacto !</h3>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <form method="post" action="#" class="form-horizontal">
+            <div class="form-group">
+              <label for="full_name">Nombre del contacto</label>
+              <input type="text" class="form-control" name="full_name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Email de contacto">
+            </div>
+            <div class="col-md-12">
+              <label for="exampleInputFile">Contenido</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="true" id="newslatter" name="newslatter" /> Recivir novedades 
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <p class="bg-info info-box"> Mensaje enviado con exito. Muchas gracias!</p>
+          </form>
+        </div>
+      </div> <!-- /.row -->
     </div> <!-- /.container -->
 
     <footer>
@@ -186,6 +215,10 @@
         var href = link.attr("href");
         $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
         link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
+      });
+      $('form button').on('click', function(){
+        $('form .info-box').addClass('show');
+        event.preventDefault();
       });
     </script>
   </body>
