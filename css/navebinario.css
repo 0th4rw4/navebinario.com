@@ -61,7 +61,7 @@ html body .benefit .benefit-ball.transparent {
   background: transparent; 
 }
 .binario div.social {
-  padding-left: 96px;
+  /*padding-left: 96px;*/
 }
 .binario div.social > * { 
   display: inline-block; 
@@ -110,9 +110,10 @@ html body .benefit .benefit-ball.transparent {
 #bitcoin {
   position: absolute;
   right: 10px;
-  top: 27em;
   padding: 6px;
   line-height: 0.5em;
+  bottom: 13px; 
+  top: auto;
 }
 #bitcoin a {
   display: inline;
@@ -223,6 +224,15 @@ footer {
   .benefit {
     margin-bottom: 2em;
   }
+  .binario div.social { padding-left: 0 !important;}
+  #bitcoin { 
+    display: none !important;
+  }
+  .benefit .benefit-ball {
+    padding: 20px;
+  }
+  footer .pull-left,
+  footer .pull-right { float: none !important; text-align: center; }
 }
 @media screen and (max-width: 480px) {
   body {
@@ -233,6 +243,15 @@ footer {
   }
   footer .pull-right {
     display: none;
+  }
+  #bitcoin { 
+    display: none !important;
+  }
+  .benefit .benefit-ball {
+    padding: 0 !important;
+  }
+  .benefit-ball img{
+    width: 75%;
   }
 }
 
