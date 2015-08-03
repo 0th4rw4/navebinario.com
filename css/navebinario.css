@@ -103,6 +103,9 @@ html body .benefit .benefit-ball.transparent {
 .navbar ul.nav li button {
   margin: 0.7em 0 0 1em;
 }
+
+div.container div.row { text-align: center;}
+
 #bitcoin {
   position: absolute;
   right: 10px;
@@ -286,6 +289,8 @@ footer {
   .benefit-ball img{
     width: 75%;
   }
+  div.container div.row { text-align: left;}
+  div.container div.row  .benefit { text-align: center;}
 }
 
 /***
