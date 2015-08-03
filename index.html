@@ -39,6 +39,7 @@
             <li><a href="#top" class="nav-link">Binario</a></li>
             <li><a href="#weapons" class="nav-link">Recursos Principales</a></li>
             <li><a href="#a_voluntad" class="nav-link" title="Proximamente">A Voluntad!</a></li>
+            <li><a href="#portfolio" class="nav-link" title="Portfolio">Portfolio</a></li>
             <li><a href="#contacto" class="nav-link">Contacto</a></li>
           </ul>
         </div> <!-- /.navbar-collapse -->
@@ -60,7 +61,7 @@
         </div>
 
         <div id="bitcoin" class="text-right">
-            <img src="iconos/bitcoin.png" alt="Bitcoin" width="199" height="60" />
+            <a href="https://raw.githubusercontent.com/0th4rw4/navebinario.com/master/19SRg8Y9Ae1VuHArtTLquhmd19uur9VfeD.bmp" rel="me nofollow" target="_blank"><img src="iconos/bitcoin.png" alt="Bitcoin" width="199" height="60" /></a>
             <a href="https://bitcoin.org/es/faq" title="Que es Bitcoin" rel="nofollow"> ¿Que es esto?</a>
           </div>
       </div> <!-- /.container -->
@@ -165,6 +166,50 @@
         </div>
       </div> <!-- /.row -->
 
+
+
+
+      <h3 id="portfolio" class="subhead">Portfolio</h3>
+      <!--<div class="row">
+         <div class="col-md-10 col-md-offset-1"></div> -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a href="https://github.com/0th4rw4/navebinario.com" rel="me nofollow"  target="_blank"> <img src="img/navebinario.com.png" alt="Landing Page" /></a>
+            </div>
+            <div class="item">
+              <a href="https://github.com/0th4rw4/sistemaDeBlog_PHP"  rel="me nofollow"  target="_blank"> <img src="img/sistemaBlogPHP.png" alt="Sistema a medida PHP" /></a>
+            </div>
+            <div class="item">
+              <a href="https://github.com/0th4rw4/carroDeComprasJS" rel="me nofollow" target="_blank"> <img src="img/carroComprasJS.png" alt="Sistema a medida JS" /></a>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        <!--</div>-->
+      </div> <!-- /.row -->
+
+
+
+
+      
+
       <div class="sect-border"></div>
 
       <h3 id="contacto" class="subhead">Ponete en contacto !</h3>
@@ -209,6 +254,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+      $('.carousel').carousel();
+
       $(".nav-link").click(function(e) {
         e.preventDefault();
         var link = $(this);

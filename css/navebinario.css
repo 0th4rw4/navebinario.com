@@ -106,6 +106,7 @@ html body .benefit .benefit-ball.transparent {
 
 div.container div.row { text-align: center;}
 
+#top.binario { position: relative; }
 #bitcoin {
   position: absolute;
   right: 10px;
@@ -267,6 +268,8 @@ footer {
   .benefit .benefit-ball {
     padding: 20px;
   }
+  div.container div.row { text-align: left;}
+  div.container div.row  .benefit { text-align: center;}
   footer .pull-left,
   footer .pull-right { float: none !important; text-align: center; }
 }
