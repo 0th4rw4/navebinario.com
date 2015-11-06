@@ -32,7 +32,6 @@ body, h1, h2, h3, h4, h5, h6, .h1 {
   font-family: "OpenSans sans", helvetica, sans-serif;
 }
 
-/*otharwa mod*/
 span.imgMe {
   display: inline-block;
   background-image: url('../whoami.jpg');
@@ -61,21 +60,18 @@ img.logo2 {
 html body .benefit .benefit-ball.transparent { 
   background: transparent; 
 }
-.jumbotron div.social {
-  padding-left: 96px;
-}
-.jumbotron div.social > * { 
+.binario div.social > * { 
   display: inline-block; 
   line-height: 0;
   padding: 6px;
 }
-.jumbotron div a img,
-.jumbotron div span img { 
+.binario div a img,
+.binario div span img { 
   height: 60px; 
   width: auto;
   display: inline-block;
 }
-.jumbotron div span a {
+.binario div span a {
   display: inline;
   margin: 0;
   padding: 0;
@@ -83,7 +79,6 @@ html body .benefit .benefit-ball.transparent {
 }
 
 .btn {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 2px;
 }
 .container {
@@ -97,7 +92,7 @@ html body .benefit .benefit-ball.transparent {
   color: #fff;
   font-family: "OpenSans serif", georgia, serif;
   font-weight: bold;
-  padding: 5px 5px; /*mod*/
+  padding: 5px 5px;
 }
 .navbar ul.nav li a {
   color: #fff;
@@ -108,12 +103,17 @@ html body .benefit .benefit-ball.transparent {
 .navbar ul.nav li button {
   margin: 0.7em 0 0 1em;
 }
+
+div.container div.row { text-align: center;}
+
+#top.binario { position: relative; }
 #bitcoin {
   position: absolute;
   right: 10px;
-  top: 27em;
   padding: 6px;
   line-height: 0.5em;
+  bottom: 13px; 
+  top: auto;
 }
 #bitcoin a {
   display: inline;
@@ -124,47 +124,42 @@ html body .benefit .benefit-ball.transparent {
 #bitcoin img {
   display: block;
 }
-.jumbotron {
+.binario {
   background: url(../img/noisy_net.png);
   color: #fff;
   padding: 5.5em 0 6em;
   text-align: center;
 }
-.jumbotron h1,
-.jumbotron .h1 {
+.binario h1,
+.binario .h1 {
   font-family: "OpenSans serif", georgia, serif;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000;
 }
-.jumbotron .h1 { 
+.binario .h1 { 
   font-size: 2.2em;
 }
-.jumbotron h1 { 
+.binario h1 { 
   font-size: 2em;
   margin-bottom: 0.9em;
 }
-.jumbotron h2,
-.jumbotron .h2 {
+.binario h2,
+.binario .h2 {
   font-size: 1.7em;
   font-style: italic;
   font-weight: normal;
   line-height: 1.4em;
   margin-bottom: 1em;
 }
-.jumbotron h2 {
+.binario h2 {
   margin-top: 3.3em;
 }
-.jumbotron .btn {
+.binario .btn {
   box-shadow: 1px 1px 3px #000;
   font-size: 1.2em;
   font-weight: bold;
   padding: 0.3em 2.5em 0.5em;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-.jumbotron .btn .glyphicon {
-  margin-left: 0.2em;
-  position: relative;
-  top: 3px;
 }
 .sect-border {
   border-top: 1px dashed #d6d6d6;
@@ -209,14 +204,43 @@ li.benefit {
   font-weight: bold;
 }
 
-#slideshow {
-  margin: 0.5em 0 1.5em;
+.form-horizontal .form-group {
+  width: 40%;
+  display: inline-block;
+  margin: 5px 10px;
 }
-#slideshow .carousel-inner img {
-  background: #000;
-  height: 500px;
-  width: 100%;
+
+form { position: relative; }
+form .info-box {
+  margin-top: 0;
+  color: #333;
+  padding: 8px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0.0;
+  font-size: 0.9em;
+
+  transition-delay: 0s;
+  transition-duration: 0.7s;
+  transition-property: all;
+  transition-timing-function: ease;
+
+  -moz-transition-delay: 0s;
+  -moz-transition-duration: 0.7s;
+  -moz-transition-property: all;
+  -moz-transition-timing-function: ease;
+
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.7s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
 }
+form .info-box.show {
+  visibility: visible;
+  opacity: 1.0;
+  margin-top: 10px;
+}
+#contacto form button { margin: 5px;}
 footer {
   background: #111;
   color: #fff;
@@ -230,22 +254,63 @@ footer {
   .navbar ul.nav li button {
     margin: 1em 0;
   }
-  .jumbotron {
+  .binario {
     font-size: 17px;
     padding: 6em 0 4em;
   }
   .benefit {
     margin-bottom: 2em;
   }
+  .binario div.social { padding-left: 0 !important;}
+  #bitcoin { 
+    display: none !important;
+  }
+  .benefit .benefit-ball {
+    padding: 20px;
+  }
+  div.container div.row { text-align: left;}
+  div.container div.row  .benefit { text-align: center;}
+  footer .pull-left,
+  footer .pull-right { float: none !important; text-align: center; }
 }
 @media screen and (max-width: 480px) {
   body {
     font-size: 13px;
   }
-  .jumbotron {
+  .binario {
     font-size: 13px;
   }
   footer .pull-right {
     display: none;
   }
+  #bitcoin { 
+    display: none !important;
+  }
+  .benefit .benefit-ball {
+    padding: 0 !important;
+  }
+  .benefit-ball img{
+    width: 75%;
+  }
+  div.container div.row { text-align: left;}
+  div.container div.row  .benefit { text-align: center;}
 }
+
+/***
+# Autor: Sebastian Arca <sebastianarca@gmail.com>
+# DNI:; 36724020
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation; either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General
+# Public License along with this program.  If not, see
+# <http://www.gnu.org/licenses/>.
+***/
