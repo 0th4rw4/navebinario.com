@@ -43,31 +43,31 @@ span.imgMe {
 .btn.btn-warning::before {
   content:"otharwa@navebinario.com";
 }
-img.logo1 { 
+img.logo1 {
   background-color: white;
   padding: 1px;
   width: 80px;
 }
-img.logo0 { 
+img.logo0 {
   width: 120px;
 }
-img.logo2 { 
+img.logo2 {
     height: 100%;
 }
 .benefit-ball img{
   width: 100px;
 }
-html body .benefit .benefit-ball.transparent { 
-  background: transparent; 
+html body .benefit .benefit-ball.transparent {
+  background: transparent;
 }
-.binario div.social > * { 
-  display: inline-block; 
+.binario div.social > * {
+  display: inline-block;
   line-height: 0;
   padding: 6px;
 }
 .binario div a img,
-.binario div span img { 
-  height: 60px; 
+.binario div span img {
+  height: 60px;
   width: auto;
   display: inline-block;
 }
@@ -112,7 +112,7 @@ div.container div.row { text-align: center;}
   right: 10px;
   padding: 6px;
   line-height: 0.5em;
-  bottom: 13px; 
+  bottom: 13px;
   top: auto;
 }
 #bitcoin a {
@@ -136,10 +136,10 @@ div.container div.row { text-align: center;}
   font-weight: bold;
   text-shadow: 1px 1px 3px #000;
 }
-.binario .h1 { 
+.binario .h1 {
   font-size: 2.2em;
 }
-.binario h1 { 
+.binario h1 {
   font-size: 2em;
   margin-bottom: 0.9em;
 }
@@ -262,7 +262,7 @@ footer {
     margin-bottom: 2em;
   }
   .binario div.social { padding-left: 0 !important;}
-  #bitcoin { 
+  #bitcoin {
     display: none !important;
   }
   .benefit .benefit-ball {
@@ -283,8 +283,16 @@ footer {
   footer .pull-right {
     display: none;
   }
-  #bitcoin { 
-    display: none !important;
+  #bitcoin {
+    display: block !important;
+    position: relative;
+    text-align: right;
+    margin-top: 10px;
+  }
+  #bitcoin * {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
   }
   .benefit .benefit-ball {
     padding: 0 !important;
