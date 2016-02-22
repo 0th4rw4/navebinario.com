@@ -263,7 +263,15 @@ footer {
   }
   .binario div.social { padding-left: 0 !important;}
   #bitcoin {
-    display: none !important;
+    display: block !important;
+    position: relative;
+    text-align: right;
+    margin-top: 10px;
+  }
+  #bitcoin * {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
   }
   .benefit .benefit-ball {
     padding: 20px;
