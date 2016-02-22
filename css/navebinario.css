@@ -268,10 +268,13 @@ footer {
     text-align: right;
     margin-top: 10px;
   }
-  #bitcoin * {
-    display: inline-block;
+  #bitcoin a {
+    display: block;
     width: 100%;
     text-align: right;
+  }
+  #bitcoin img {
+    display: inline;
   }
   .benefit .benefit-ball {
     padding: 20px;
@@ -297,10 +300,13 @@ footer {
     text-align: right;
     margin-top: 10px;
   }
-  #bitcoin * {
-    display: inline-block;
+  #bitcoin a {
+    display: block;
     width: 100%;
     text-align: right;
+  }
+  #bitcoin img {
+    display: inline;
   }
   .benefit .benefit-ball {
     padding: 0 !important;
