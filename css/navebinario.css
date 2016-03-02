@@ -104,7 +104,8 @@ html body .benefit .benefit-ball.transparent {
   margin: 0.7em 0 0 1em;
 }
 
-div.container div.row { text-align: center;}
+/*div.container div.row { text-align: center;}*/
+.text-center { text-align: center;}
 
 #top.binario { position: relative; }
 #bitcoin {
@@ -202,6 +203,27 @@ li.benefit {
   font-family: "OpenSans serif", georgia, serif;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+h4.subhead {
+  background-color: black;
+  color: #fff;
+  margin: 0 0 0 0;
+  padding: 0.3em 0;
+}
+
+.carousel-inner .carousel-caption {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 3px #000;
+  color: #fff;
+  left: 0;
+}
+.carousel-caption h4 {
+
+}
+.carousel-caption p {
+  margin: 0 0 5px;
 }
 
 .form-horizontal .form-group {
