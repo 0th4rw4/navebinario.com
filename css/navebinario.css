@@ -113,7 +113,7 @@ html body .benefit .benefit-ball.transparent {
   right: 10px;
   padding: 6px;
   line-height: 0.5em;
-  bottom: 13px;
+  bottom: 6vh;
   top: auto;
 }
 #bitcoin a {
@@ -121,6 +121,7 @@ html body .benefit .benefit-ball.transparent {
   margin: 0;
   padding: 0;
   font-size: 10px;
+  color: #fff;
 }
 #bitcoin img {
   display: block;
@@ -321,6 +322,7 @@ footer {
     position: relative;
     text-align: right;
     margin-top: 10px;
+    bottom: 0;
   }
   #bitcoin a {
     display: block;
