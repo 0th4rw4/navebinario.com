@@ -88,6 +88,10 @@ html body .benefit .benefit-ball.transparent {
   background: #111;
   padding: 0.3em 0;
 }
+.collapse.navbar-collapse,
+.collapse.navbar-collapse * {
+  overflow: hidden;
+}
 .navbar .navbar-brand {
   color: #fff;
   font-family: "OpenSans serif", georgia, serif;
